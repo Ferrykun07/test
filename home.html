@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 1500px;
+        }
+
+        .header {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .name {
+            font-size: 24px;
+            padding-left: 20px;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            transition: font-size 0.3s; /* Transisi untuk animasi perubahan ukuran teks */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li:hover {
+            font-size: larger; /* Mengubah ukuran teks saat di-hover */
+        }
+        p {
+            color: darkgoldenrod;
+            font-size: 30px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .content{
+            margin: 120px;
+        }
+        .contact{
+            background-color: bisque;
+            padding: 330px;
+        }
+        #email ,#name ,#subject, #message{
+            border-color: rgb(231, 22, 22);
+            font-size: 20px;
+            border-style:solid;
+        }
+        .skill{
+            margin:120px ;
+        }
+        .hobbie{
+            margin-left:120px ;
+        }
+        .langguage{
+            margin:120px ;
+        }
+        .submits :hover{
+            border-color: red;
+        }
+        .code{
+            margin: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">
+            <pre>Ferry Pradana</pre>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="https://belajarmudah.netlify.app/">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h2 id="profile">Profile</h2>
+        <p>Hello, I'm Ferry Pradana. 
+        I am an entrepreneur who is engaged in gaining new knowledge,
+        and I am happy to share creativity through web development and technology. 
+        With my experience in this field, I strive to find innovative and compelling solutions to every challenge I face</p>
+    </div>
+    <div class="skill">
+        <ul><h2>Skill</h2>   
+ 
+        <li><h4>Writing</h4></li> 
+        <div class="point" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 70%, gray 30%);"> </div>
+
+        <li><h4>Adaptability</h4></li>
+        <div class="point" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 70%, gray 30%);"> </div>
+
+        <li><h4>Data Entry</h4></li>
+        <div class="point" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 70%, gray 30%);"> </div>
+        </ul>
+    </div>
+    <div class="hobbie">
+        <h2>Hobbies</h2>
+        <ul>
+            <li><h4>Reading</h4></li>
+            <li><h4>Coding</h4></li>
+            <li><h4>Editing</h4></li>
+        </ul>
+        
+    </div>
+    <div class="langguage">
+        <ul><h2>Langguages</h2>   
+ 
+        <li><h4>English</h4></li> 
+        <div class="point-english" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 70%, gray 30%);"> </div>
+
+        <li><h4>Indonesian</h4></li>
+        <div class="point-ind" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 85%, gray 15%);"> </div>
+
+        <li><h4>Javanese</h4></li>
+        <div class="point-java" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 70%, gray 15%);"> </div>
+        </ul>
+    </div>
+    <div class="code">
+        <ul><h2>Programming Langguages</h2>   
+ 
+        <li><h4>PHP</h4></li> 
+        <div class="point-english" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 70%, gray 30%);"> </div>
+
+        <li><h4>JavaScript</h4></li>
+        <div class="point-ind" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 85%, gray 15%);"> </div>
+
+        <li><h4>Python</h4></li>
+        <div class="point-java" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 70%, gray 15%);"> </div>
+
+        <li><h4>HTML</h4></li>
+        <div class="point-java" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 90%, gray 10%);"> </div>
+
+        <li><h4>CSS</h4></li>
+        <div class="point-java" style="width: 400px;height: 20px;background: linear-gradient(to right, brown 85%, gray 15%);"> </div>
+        </ul>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p></p>
+        <form action="" style="width: 800px;">
+            <label for="name">Name</label><label for="email" style="margin: 300px;">Email</label> <br>
+            <input type="text" id="name" name="name" style="width: 300px;height: 40px;border-radius: 20px;">
+            <input type="email" id="email" name="email" style="width: 300px;height: 40px;border-radius: 20px;margin-left: 20px;"> <br><br><br>
+            <label for="subject">Subject</label> <br>
+            <input type="text" id="subject" name="subject" style="width: 630px;height: 40px;border-radius: 20px;"> <br><br><br>
+            <label for="message">Message</label> <br>
+            <textarea name="message" id="message" style="border-radius: 20px;width: 630px;height: 120px;"></textarea> <br><br>
+            <button id="submit" style="width: 100px;height: 40px;border-radius: 20px;margin-left:540px">Send</button>
+        </form>
+    </div>
+</body>
+</html>
